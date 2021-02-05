@@ -24,9 +24,11 @@ $(document).ready(function () {
         $('html').css("scrollBehavior", "auto");
     });
 
-    $('.navbar .menu li a').click(function () {
+    $(".navbar .menu li a").click(function () {
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
+        $('.navbar .menu li a').removeClass("nav-active");
+        $(this).addClass("nav-active");
     });
 
     // toggle menu/navbar script

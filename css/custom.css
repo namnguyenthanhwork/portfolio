@@ -58,3 +58,30 @@
 .hvr-shutter-in-horizontal {
     background: var(--primary-color);
 }
+
+.hvr-rectangle-in::before {
+    content: "";
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    top: 1px;
+    right: 1px;
+    left: 1px;
+    bottom: 1px;
+    background: var(--primary-color);
+}
+
+.hvr-rectangle-in {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.hvr-rectangle-in:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}

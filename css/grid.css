@@ -435,16 +435,22 @@
 }
 
 /* Tablet */
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 700px) and (max-width: 1023px) {
   .wide {
-    width: 644px;
+    width: 650px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 699px) {
+  .wide {
+    width: 544px;
   }
 }
 
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
   .wide {
-    width: 984px;
+    width: 850px;
   }
 
   .wide .row {

@@ -11,6 +11,14 @@
     --text-color: #000;
     --mix-color: rgb(240, 104, 14);
     --projects-section-color: #4c40ae;
+
+    --top: 0;
+    --left: 0;
+    --cursor-width: 30px;
+    --img-width: 30px;
+    --color: #000000;
+    --blending-mode: normal;
+    --default-cursor: 'none'
 }
 
 * {
