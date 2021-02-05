@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thành Nam Bio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thành Nam Portfolio</title>
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/hover-min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 
     <!-- Responsive -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -19,8 +21,8 @@
         crossorigin="anonymous" />
 
     <!-- Custom carousel -->
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/cursor.css" />
+
     <!-- Owl carousel -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -35,8 +37,10 @@
     <!-- button contact -->
     <div class="button-contact">
         <a href="https://www.facebook.com/NguyenThanhNam1601"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/yuuto2k1/"> <i class="fab fa-instagram"></i></a>
-        <a href="mailto:namnguyenthanh.work@gmail.com"> <i class="fab fa-google"></i></a>
+        <a href="https://www.instagram.com/yuuto2k1/">
+            <i class="fab fa-instagram"></i></a>
+        <a href="mailto:namnguyenthanh.work@gmail.com">
+            <i class="fab fa-google"></i></a>
     </div>
     <!-- navigation -->
     <header class="header">
@@ -64,7 +68,7 @@
     <section class="homepage" id="homepage">
         <div class="row">
             <div class="homepage-content">
-                <div class="text-1">Hi guys, my name is </div>
+                <div class="text-1">Hi guys, my name is</div>
                 <div class="text-2">Thành Nam</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
             </div>
@@ -77,22 +81,36 @@
             <h2 class="title">About me</h2>
             <div class="about-content row">
                 <div class="about-content__left col s-12 m-4 l-4">
-                    <img src="images/avatar.jpg" alt="images me">
+                    <img src="images/avatar.jpg" alt="images me" />
                 </div>
                 <div class="about-content__right col s-12 m-8 l-8">
-                    <div class="name">I'm Thành Nam and I'm a <span class="typing-2"></span></div>
+                    <div class="name">
+                        I'm Thành Nam and I'm a <span class="typing-2"></span>
+                    </div>
                     <div class="info">
                         <p><span>Name: </span><span class="typing-name"></span></p>
-                        <p><span>Age: </span><span id="ageCurrentTime"></span></p>
+                        <p>
+                            <span>Age: </span>
+                            <span id="years"></span><span class="paddingAge">years</span>
+                            <span id="months"></span><span class="paddingAge">months</span>
+                            <span id="days"></span><span class="paddingAge">days</span>
+                            <span id="hours"></span><span class="paddingAge">hour</span>
+                            <span id="minutes"></span><span class="paddingAge">minute</span>
+                            <span id="seconds"></span><span class="paddingAge">second</span>
+                        </p>
                         <p><span>Studying at: </span> Open University (OU HCMC)</p>
                         <p><span>Major: </span>Infomation Tecnology (IT)</p>
                         <p><span>Class: </span>DH19IT03 (K19 - IT93)</p>
-                        <p><span>Hobby: </span>Read comics. listen to music, watch films - youtube, road
-                            tripping, play badminton, flying planes, learning to code</p>
-                        <p><span>Email work: </span>namnguyenthanh.work@gmail.com</p>
+                        <p><span>Relationship: </span>Single</p>
+                        <p>
+                            <span>Hobby: </span>Read comics. listen to music, watch films -
+                            youtube, road tripping, play badminton, flying planes, learning
+                            to code
+                        </p>
+                        <p><span>Email: </span>namnguyenthanh.work@gmail.com</p>
                         <p><span>Living at: </span> Ho Chi Minh City</p>
                     </div>
-                    <a href="#">Download CV</a>
+                    <a href="javascript:;" onclick="alertCV();">Download CV</a>
                 </div>
             </div>
         </div>
@@ -107,42 +125,48 @@
                     <div class="services-content__items">
                         <i class="fas fa-paint-brush"></i>
                         <h3 class="items-title">Web Design</h3>
-                        <p class="items-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in
-                            sit quos sint sapiente obcaecati mollitia laborum libero porro, cumque repellat officia
-                            suscipit
-                            consequatur esse, itaque nisi beatae animi nam.</p>
+                        <p class="items-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                            in sit quos sint sapiente obcaecati mollitia laborum libero
+                            porro, cumque repellat officia suscipit consequatur esse, itaque
+                            nisi beatae animi nam.
+                        </p>
                     </div>
                 </div>
                 <div class="services-card">
                     <div class="services-content__items">
                         <i class="fas fa-chart-line"></i>
                         <h3 class="items-title">Web Design</h3>
-                        <p class="items-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus
-                            nihil id atque
-                            aperiam
-                            praesentium eos expedita autem cupiditate quibusdam. Maxime quis molestias quaerat,
-                            provident id
-                            expedita explicabo neque itaque.</p>
+                        <p class="items-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti minus nihil id atque aperiam praesentium eos expedita
+                            autem cupiditate quibusdam. Maxime quis molestias quaerat,
+                            provident id expedita explicabo neque itaque.
+                        </p>
                     </div>
                 </div>
                 <div class="services-card">
                     <div class="services-content__items">
                         <i class="fas fa-code"></i>
                         <h3 class="items-title">Web Design</h3>
-                        <p class="items-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime officia
-                            veniam saepe facilis
-                            quisquam iure delectus quia distinctio quod enim veritatis deleniti repellat, facere error a
-                            natus, mollitia harum reprehenderit.</p>
+                        <p class="items-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                            officia veniam saepe facilis quisquam iure delectus quia
+                            distinctio quod enim veritatis deleniti repellat, facere error a
+                            natus, mollitia harum reprehenderit.
+                        </p>
                     </div>
                 </div>
                 <div class="services-card">
                     <div class="services-content__items">
                         <i class="fas fa-code"></i>
                         <h3 class="items-title">Web Design</h3>
-                        <p class="items-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime officia
-                            veniam saepe facilis
-                            quisquam iure delectus quia distinctio quod enim veritatis deleniti repellat, facere error a
-                            natus, mollitia harum reprehenderit.</p>
+                        <p class="items-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                            officia veniam saepe facilis quisquam iure delectus quia
+                            distinctio quod enim veritatis deleniti repellat, facere error a
+                            natus, mollitia harum reprehenderit.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -156,35 +180,42 @@
             <div class="row">
                 <div class="col s-12 m-5 l-5">
                     <h3 class="skills-describe">My creative skills & experiences</h3>
-                    <p class="skills-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-                        possimus enim nisi pariatur nam libero accusantium temporibus, recusandae ratione quia quaerat
-                        placeat illo. Non, quaerat culpa perspiciatis impedit totam earum.</p>
+                    <p class="skills-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dignissimos possimus enim nisi pariatur nam libero accusantium
+                        temporibus, recusandae ratione quia quaerat placeat illo. Non,
+                        quaerat culpa perspiciatis impedit totam earum.
+                    </p>
                 </div>
                 <div class="col s-12 m-7 l-7">
                     <div class="skill-list">
-                        <h3 class="title-skills"><i class="fas fa-laptop-code"></i>Language programming</h3>
+                        <h3 class="title-skills">
+                            <i class="fas fa-laptop-code"></i>Language programming
+                        </h3>
                         <div class="row">
                             <div class="col s-4 m-4 l-3 skills-items">
-                                <img src="images/skills-logo/html5.png" alt="html5 logo">
+                                <img src="images/skills-logo/html5.png" alt="html5 logo" />
                             </div>
                             <div class="col s-4 m-4 l-3 skills-items">
-                                <img src="images/skills-logo/css3.png" alt="css3 logo">
+                                <img src="images/skills-logo/css3.png" alt="css3 logo" />
                             </div>
                             <div class="col s-4 m-4 l-3 skills-items">
-                                <img src="images/skills-logo/js.png" alt="javascript logo">
+                                <img src="images/skills-logo/js.png" alt="javascript logo" />
                             </div>
                             <div class="col s-4 m-4 l-3 skills-items">
-                                <img src="images/skills-logo/c-plus-plus.png" alt="c++ logo">
+                                <img src="images/skills-logo/c-plus-plus.png" alt="c++ logo" />
                             </div>
                             <div class="col s-4 m-4 l-3 skills-items">
-                                <img src="images/skills-logo/java.png" alt="java logo">
+                                <img src="images/skills-logo/java.png" alt="java logo" />
                             </div>
                         </div>
-                        <h3 class="title-skills"><i class="fas fa-database"></i>Database</h3>
+                        <h3 class="title-skills">
+                            <i class="fas fa-database"></i>Database
+                        </h3>
                         <div class="row">
                             <div class="col s-4 m-4 l-3 skills-items">
                                 <div class="database-items">
-                                    <img src="images/skills-logo/mysql.png" alt="">
+                                    <img src="images/skills-logo/mysql.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -202,52 +233,55 @@
                 <div class="projects-list">
                     <div class="col s-12 m-8 l-8">
                         <div class="projects-items hvr-shutter-out-horizontal">
-                            <h3 class="projects-name"><span>Project name:</span> Restaurant projects</h3>
+                            <h3 class="projects-name">
+                                <span>Project name:</span> Restaurant projects
+                            </h3>
                             <div class="projects-describe">
-                                <span>Description:</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Libero
-                                id error, harum corrupti sapiente soluta nostrum iusto tempora voluptas eveniet, laborum
-                                et
-                                est. Dicta, eius amet. Minus quod exercitationem asperiores?
+                                <span>Description:</span> Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit. Libero id error, harum corrupti
+                                sapiente soluta nostrum iusto tempora voluptas eveniet,
+                                laborum et est. Dicta, eius amet. Minus quod exercitationem
+                                asperiores?
                             </div>
                             <div class="link">
-                                <span>Link project:</span> <a
-                                    href="https://nhokchibi365.github.io/restaurant-project/">Click
-                                    here!</a>
+                                <span>Link project:</span>
+                                <a href="https://nhokchibi365.github.io/restaurant-project/">Click here!</a>
                             </div>
                         </div>
                     </div>
                     <div class="col s-12 m-8 l-8">
                         <div class="projects-items hvr-sweep-to-top">
-                            <h3 class="projects-name"><span>Project name:</span> Restaurant projects</h3>
+                            <h3 class="projects-name">
+                                <span>Project name:</span> Restaurant projects
+                            </h3>
                             <div class="projects-describe">
-                                <span>Description:</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Libero
-                                id error, harum corrupti sapiente soluta nostrum iusto tempora voluptas eveniet, laborum
-                                et
-                                est. Dicta, eius amet. Minus quod exercitationem asperiores?
+                                <span>Description:</span> Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit. Libero id error, harum corrupti
+                                sapiente soluta nostrum iusto tempora voluptas eveniet,
+                                laborum et est. Dicta, eius amet. Minus quod exercitationem
+                                asperiores?
                             </div>
                             <div class="link">
-                                <span>Link project:</span> <a
-                                    href="https://nhokchibi365.github.io/restaurant-project/">Click
-                                    here!</a>
+                                <span>Link project:</span>
+                                <a href="https://nhokchibi365.github.io/restaurant-project/">Click here!</a>
                             </div>
                         </div>
                     </div>
                     <div class="col s-12 m-8 l-8">
                         <div class="projects-items hvr-shutter-in-horizontal">
-                            <h3 class="projects-name"><span>Project name:</span> Restaurant projects</h3>
+                            <h3 class="projects-name">
+                                <span>Project name:</span> Restaurant projects
+                            </h3>
                             <div class="projects-describe">
-                                <span>Description:</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Libero
-                                id error, harum corrupti sapiente soluta nostrum iusto tempora voluptas eveniet, laborum
-                                et
-                                est. Dicta, eius amet. Minus quod exercitationem asperiores?
+                                <span>Description:</span> Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit. Libero id error, harum corrupti
+                                sapiente soluta nostrum iusto tempora voluptas eveniet,
+                                laborum et est. Dicta, eius amet. Minus quod exercitationem
+                                asperiores?
                             </div>
                             <div class="link">
-                                <span>Link project:</span> <a
-                                    href="https://nhokchibi365.github.io/restaurant-project/">Click
-                                    here!</a>
+                                <span>Link project:</span>
+                                <a href="https://nhokchibi365.github.io/restaurant-project/">Click here!</a>
                             </div>
                         </div>
                     </div>
@@ -263,9 +297,12 @@
             <div class="row">
                 <div class="col s-12 m-5 l-5 contact-describe">
                     <h3>Get in touch</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt eligendi non,
-                        architecto molestiae modi quisquam consequatur voluptatum omnis repudiandae ipsum laudantium
-                        repellat maxime natus quod, iure facilis corrupti. Quasi?</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                        incidunt eligendi non, architecto molestiae modi quisquam
+                        consequatur voluptatum omnis repudiandae ipsum laudantium repellat
+                        maxime natus quod, iure facilis corrupti. Quasi?
+                    </p>
                     <div class="contact-icons">
                         <div class="contact-items">
                             <i class="fas fa-user"></i>
@@ -294,13 +331,13 @@
                     <h3>Message me</h3>
                     <form class="row" action="mailto:namnguyenthanh.work@gmail.com" method="POST">
                         <div class="col s-12 m-6 l-6">
-                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="text" name="name" id="name" placeholder="Name" required />
                         </div>
                         <div class="col s-12 m-6 l-6">
-                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <input type="email" name="email" id="email" placeholder="Email" required />
                         </div>
                         <div class="col s-12 m-12 l-12">
-                            <input type="text" name="content" id="content" placeholder="Subject">
+                            <input type="text" name="content" id="content" placeholder="Subject" />
                         </div>
                         <button type="submit" class="hvr-rectangle-in">Send</button>
                     </form>
@@ -313,59 +350,44 @@
     <footer class="footer">
         <p>Design by <span>Thanh Nam</span> &copy; All rights reserved.</p>
     </footer>
+
     <!-- All plugins -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
     <script src="js/cursor.js"></script>
-    <!-- cursors -->
-    <script>
-        var cursors = [{
-            "cursor_id": "3",
-            "cursor_type": "0",
-            "cursor_shape": "11",
-            "cursor_image": "",
-            "default_cursor": "auto",
-            "hover_effect": "plugin",
-            "body_activation": "1",
-            "element_activation": "0",
-            "selector_type": "tag",
-            "selector_data": "body",
-            "color": "#f72c26",
-            "width": "30",
-            "blending_mode": "normal"
-        }];
-    </script>
+
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function () {
             FB.init({
                 xfbml: true,
-                version: 'v9.0'
+                version: "v9.0",
             });
         };
 
         (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
+            var js,
+                fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s);
             js.id = id;
-            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+        })(document, "script", "facebook-jssdk");
     </script>
 
     <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat" attribution="setup_tool" page_id="105825651245887" theme_color="#f05123"
+    <div class="fb-customerchat" attribution="setup_tool" page_id="105825651245887" theme_color="#0A7CFF"
         logged_in_greeting="Xin chào! Chúng tôi có thể giúp được gì cho bạn ?"
-        logged_out_greeting="Xin chào! Chúng tôi có thể giúp được gì cho bạn ?">
-    </div>
+        logged_out_greeting="Xin chào! Chúng tôi có thể giúp được gì cho bạn ?"></div>
 </body>
 
 </html>

@@ -9,7 +9,7 @@
     --shadow-color: #7f89a19a;
     --black-color: #000;
     --text-color: #333;
-    --projects-section-color: #4c40ae;
+    --projects-section-color: linear-gradient(45deg, #0099ff -9.4%, #a033ff 51.57%, #ff5280 84.07%, #ff7061 90.59%);
     --shadow-color: #7f89a19a;
     /* cursor */
     --top: 0;

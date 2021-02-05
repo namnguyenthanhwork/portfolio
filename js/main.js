@@ -133,8 +133,49 @@ function renderTime() {
     if (s < 10)
         s = "0" + s;
 
-    var myAge = document.getElementById("ageCurrentTime");
-    myAge.innerText = yearAge + " years " + monthAge + " months " + dateAge + " days " + h + " hours " + m + " min " + s + " sec";
+    var myYears = document.getElementById("years");
+    var myMonths = document.getElementById("months");
+    var myDays = document.getElementById("days");
+    var myHours = document.getElementById("hours");
+    var myMinutes = document.getElementById("minutes");
+    var mySeconds = document.getElementById("seconds");
+
+    myYears.innerText = yearAge;
+    myMonths.innerText = monthAge;
+    myDays.innerText = dateAge;
+    myHours.innerText = h;
+    myMinutes.innerText = m;
+    mySeconds.innerText = s;
+
+    myYears.style.color = `red`;
+    myMonths.style.color = `red`;
+    myDays.style.color = `red`;
+    myHours.style.color = `red`;
+    myMinutes.style.color = `red`;
+    mySeconds.style.color = `red`;
+
+
     setTimeout("renderTime()", 1000);
 }
 renderTime();
+
+// init cursor
+var cursors = [{
+    "cursor_id": "3",
+    "cursor_type": "0",
+    "cursor_shape": "11",
+    "cursor_image": "",
+    "default_cursor": "auto",
+    "hover_effect": "plugin",
+    "body_activation": "1",
+    "element_activation": "0",
+    "selector_type": "tag",
+    "selector_data": "body",
+    "color": "#f72c26",
+    "width": "30",
+    "blending_mode": "normal"
+}];
+
+function alertCV() {
+    swal("Opps, 404", "Sorry! You can't download CV, please try the next time. Thank you!!!", "error");
+}

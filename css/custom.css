@@ -85,3 +85,15 @@
     background: var(--white-color);
     color: var(--primary-color);
 }
+
+/* custom alert styling */
+.swal-title,
+.swal-text {
+    color: var(--black-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.swal-button {
+    background: #0083ff;
+}

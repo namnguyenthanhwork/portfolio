@@ -51,12 +51,12 @@ section .title::after {
 .scroll-up-btn {
     position: fixed;
     right: 30px;
-    bottom: 80px;
+    bottom: 95px;
     z-index: 9999;
     width: 45px;
     height: 45px;
     line-height: 45px;
-    background-color: var(--primary-color);
+    background: var(--projects-section-color);
     color: var(--white-color);
     text-align: center;
     font-size: 30px;
@@ -80,8 +80,7 @@ section .title::after {
 }
 
 .scroll-up-btn:hover {
-    filter: brightness(85%);
-    -webkit-filter: brightness(85%);
+    box-shadow: 0 0 20px var(--shadow-color);
 }
 
 /* button contact styling */
@@ -107,6 +106,7 @@ section .title::after {
 .button-contact a:hover {
     filter: brightness(115%);
     -webkit-filter: brightness(115%);
+
 }
 
 .button-contact i {
@@ -123,6 +123,15 @@ section .title::after {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.button-contact i:hover {
+    box-shadow: 0 0 20px var(--shadow-color);
 }
 
 .button-contact a:first-child i {
@@ -278,9 +287,13 @@ nav.row {
 /* menu button styling */
 .menu-btn {
     color: var(--white-color);
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     display: none;
+}
+
+.header.sticky .menu-btn {
+    font-size: 16px;
 }
 
 /* homepage section styling */
@@ -363,7 +376,7 @@ nav.row {
 
 .about-content__right .info>p>span:first-child {
     color: var(--secondary-color);
-    min-width: 100px;
+    min-width: 110px;
 }
 
 .about-content__right .info {
@@ -372,11 +385,14 @@ nav.row {
 
 .about-content__right .info p {
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .about-content__right .info p span {
     display: inline-block;
+}
+
+.about-content__right .info span.paddingAge {
+    padding: 0 5px;
 }
 
 .about-content__right a {
