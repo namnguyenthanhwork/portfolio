@@ -52,6 +52,13 @@ $(document).ready(function () {
         loop: true
     });
 
+    var typed = new Typed(".typing-name", {
+        strings: ["Nguyen Thanh Nam"],
+        typeSpeed: 80,
+        backSpeed: 60,
+        loop: true
+    });
+
     // owl carousel script
     $('.carousel').owlCarousel({
         autoplay: true,
@@ -74,3 +81,60 @@ $(document).ready(function () {
         }
     });
 });
+// current realtime
+function renderTime() {
+    // get date current time
+    var dateRealTime = new Date();
+    var yearNow = dateRealTime.getFullYear();
+    var dateNow = dateRealTime.getDay();
+    var monthNow = dateRealTime.getMonth() + 1;
+
+    // date of birth
+    var dob = new Date(2001, 01, 16);
+    var yearDob = dob.getYear() + 1900;
+    var monthDob = dob.getMonth();
+    var dateDob = dob.getDate();
+
+    // processing 
+    var yearAge = yearNow - yearDob;
+    if (monthNow >= monthDob)
+        var monthAge = monthNow - monthDob;
+    else {
+        yearNow--;
+        var monthAge = 12 + monthNow - monthDob;
+    }
+    if (dateNow >= dateDob)
+        var dateAge = dateNow - dateDob;
+    else {
+        monthAge--;
+        var dateAge = 31 + dateNow - dateDob;
+
+        if (monthAge < 0) {
+            monthAge = 11;
+            yearAge--;
+        }
+    }
+
+    // time
+    var currentTime = new Date();
+    var h = currentTime.getHours();
+    var m = currentTime.getMinutes();
+    var s = currentTime.getSeconds();
+    if (h == 24) {
+        h = 0;
+    } else {
+        if (h > 12)
+            h -= 0;
+    }
+    if (h < 10)
+        h = "0" + h;
+    if (m < 10)
+        m = "0" + m;
+    if (s < 10)
+        s = "0" + s;
+
+    var myAge = document.getElementById("ageCurrentTime");
+    myAge.innerText = yearAge + " years " + monthAge + " months " + dateAge + " days " + h + " hours " + m + " min " + s + " sec";
+    setTimeout("renderTime()", 1000);
+}
+renderTime();

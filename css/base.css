@@ -8,10 +8,10 @@
     --white-color: #fff;
     --shadow-color: #7f89a19a;
     --black-color: #000;
-    --text-color: #000;
-    --mix-color: rgb(240, 104, 14);
+    --text-color: #333;
     --projects-section-color: #4c40ae;
-
+    --shadow-color: #7f89a19a;
+    /* cursor */
     --top: 0;
     --left: 0;
     --cursor-width: 30px;

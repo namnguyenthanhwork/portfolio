@@ -26,7 +26,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body>
+<body onload="renderTime()">
     <!-- Go back home page -->
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
@@ -64,7 +64,7 @@
     <section class="homepage" id="homepage">
         <div class="row">
             <div class="homepage-content">
-                <div class="text-1">Hi, my name is </div>
+                <div class="text-1">Hi guys, my name is </div>
                 <div class="text-2">Thành Nam</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
             </div>
@@ -81,9 +81,17 @@
                 </div>
                 <div class="about-content__right col s-12 m-8 l-8">
                     <div class="name">I'm Thành Nam and I'm a <span class="typing-2"></span></div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, aliquam unde. Officia, minima
-                        dolores? Tenetur, reiciendis officiis a aspernatur veniam cum repellendus nisi nihil sunt, culpa
-                        aperiam sint animi assumenda.</p>
+                    <div class="info">
+                        <p><span>Name: </span><span class="typing-name"></span></p>
+                        <p><span>Age: </span><span id="ageCurrentTime"></span></p>
+                        <p><span>Studying at: </span> Open University (OU HCMC)</p>
+                        <p><span>Major: </span>Infomation Tecnology (IT)</p>
+                        <p><span>Class: </span>DH19IT03 (K19 - IT93)</p>
+                        <p><span>Hobby: </span>Read comics. listen to music, watch films - youtube, road
+                            tripping, play badminton, flying planes, learning to code</p>
+                        <p><span>Email work: </span>namnguyenthanh.work@gmail.com</p>
+                        <p><span>Living at: </span> Ho Chi Minh City</p>
+                    </div>
                     <a href="#">Download CV</a>
                 </div>
             </div>
@@ -313,10 +321,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!-- Main JS -->
-    <script src="js/cursor.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <!-- cursors -->
     <script>
-        // cursors
         var cursors = [{
             "cursor_id": "3",
             "cursor_type": "0",
@@ -333,6 +341,31 @@
             "blending_mode": "normal"
         }];
     </script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="105825651245887" theme_color="#f05123"
+        logged_in_greeting="Xin chào! Chúng tôi có thể giúp được gì cho bạn ?"
+        logged_out_greeting="Xin chào! Chúng tôi có thể giúp được gì cho bạn ?">
+    </div>
 </body>
 
 </html>
