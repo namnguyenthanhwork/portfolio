@@ -86,6 +86,11 @@
     color: var(--primary-color);
 }
 
+.hvr-radial-out::before {
+    content: "";
+    background: var(--linear-color);
+}
+
 /* custom alert styling */
 .swal-title,
 .swal-text {
