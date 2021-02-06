@@ -405,13 +405,16 @@ nav.row {
 
 .about-content__right {
     margin: auto;
-
 }
 
 .about-content__right .name {
     font-weight: 600;
     font-size: 25px;
     padding-left: 50px;
+}
+
+.about-content__right .name .typing-2 {
+    color: var(--secondary-color);
 }
 
 .about-content__right .info>p>span:first-child {
@@ -483,13 +486,7 @@ nav.row {
     content: "what i provide";
 }
 
-.services-content {
-    align-items: center;
-    justify-content: space-between;
-}
-
 .services-card {
-    justify-content: space-between;
     overflow: hidden;
     cursor: pointer;
 }
@@ -518,7 +515,7 @@ nav.row {
 }
 
 .services-content__items:hover i {
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
 .services-content__items:hover i,
@@ -544,13 +541,12 @@ nav.row {
 .services-content__items i {
     font-size: 45px;
     padding: 10px;
-    color: var(--secondary-color);
-
+    color: #5bfd70;
 }
 
 .services-content__items .items-text {
-    padding: 10px 30px;
-    text-align: justify;
+    padding: 5px 20px;
+    text-align: center;
 }
 
 /* skills section styling */
@@ -560,13 +556,8 @@ nav.row {
     background: var(--white-color);
 }
 
-.skills-describe {
-    font-size: 25px;
-}
-
-p.skills-content {
+.skills-describe>p {
     text-align: justify;
-    padding: 10px 30px 0 0;
 }
 
 .skill-list {
@@ -577,11 +568,21 @@ p.skills-content {
     flex-wrap: wrap;
 }
 
+.skills .title-skills {
+    font-size: 20px;
+}
+
 .skill-list .title-skills:nth-child(2) {
     padding: 20px 0 0;
 }
 
-.skill-list .title-skills i {
+li.skills-describe {
+    list-style-image: url(../images/menu-items-bullet.gif);
+    margin-left: 22px;
+    padding: 5px 0;
+}
+
+.title-skills>i {
     color: var(--primary-color);
     font-size: 25px;
     padding: 0 10px 0 0;

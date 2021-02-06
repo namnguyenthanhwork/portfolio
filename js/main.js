@@ -141,12 +141,12 @@ function renderTime() {
     myMinutes.innerText = m;
     mySeconds.innerText = s;
 
-    myYears.style.color = `red`;
-    myMonths.style.color = `red`;
-    myDays.style.color = `red`;
-    myHours.style.color = `red`;
-    myMinutes.style.color = `red`;
-    mySeconds.style.color = `red`;
+    myYears.style.color = `#ed4747`;
+    myMonths.style.color = `#ed4747`;
+    myDays.style.color = `#ed4747`;
+    myHours.style.color = `#0099ff`;
+    myMinutes.style.color = `#0099ff`;
+    mySeconds.style.color = `#0099ff`;
 
     setTimeout("renderTime()", 1000);
 }
