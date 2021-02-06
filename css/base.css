@@ -9,7 +9,7 @@
     --shadow-color: #7f89a19a;
     --black-color: #000;
     --text-color: #333;
-    --services-section-color: #4840bb;
+    --services-section-color: #241e72;
     --services-card-color: #3c80aabd;
 
     --linear-color: linear-gradient(45deg, #0099ff -9.4%, #a033ff 51.57%, #ff5280 84.07%, #ff7061 90.59%);
@@ -19,7 +19,7 @@
     --left: 0;
     --cursor-width: 30px;
     --img-width: 30px;
-    --color: #000000;
+    --color: #000;
     --blending-mode: normal;
     --default-cursor: 'none'
 }

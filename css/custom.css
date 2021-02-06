@@ -27,7 +27,7 @@
 /* custom hover.css styling */
 .hvr-sweep-to-top::before {
     content: "";
-    background: var(--primary-color);
+    background: var(--linear-color);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -37,7 +37,7 @@
 
 .hvr-shutter-out-horizontal::before {
     content: "";
-    background: var(--primary-color);
+    background: var(--linear-color);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -47,7 +47,7 @@
 
 .hvr-shutter-in-horizontal::before {
     content: "";
-    background: #222;
+    background: #333;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -56,7 +56,16 @@
 }
 
 .hvr-shutter-in-horizontal {
-    background: var(--primary-color);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.hvr-shutter-in-horizontal:hover {
+    background: var(--linear-color);
+
 }
 
 .hvr-rectangle-in::before {
