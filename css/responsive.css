@@ -6,6 +6,11 @@
  -----------------------------------*/
 @media (max-width: 1023px) {
 
+    /* css general */
+    section .title {
+        font-size: 28px;
+    }
+
     /* display button nav */
     .menu-btn {
         display: block;
@@ -13,7 +18,7 @@
         color: var(--secondary-color);
     }
 
-    .menu-btn i.active:before {
+    .menu-btn i.active::before {
         content: "\f00d";
     }
 
@@ -68,20 +73,6 @@
         text-align: center;
         padding-left: unset;
     }
-
-    .about-content__right .info {
-        padding: unset;
-    }
-
-    .about-content__right .info+div {
-        max-width: 186px;
-        margin: 0 auto;
-    }
-
-    .about-content__right a {
-        margin-left: unset;
-        margin-top: 20px;
-    }
 }
 
 /*------------------------------------
@@ -91,15 +82,20 @@
 
     /*  homepage section styling */
     .homepage .homepage-content .text-1 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .homepage .homepage-content .text-2 {
-        font-size: 60px;
+        font-size: 65px;
     }
 
     .homepage .homepage-content .text-3 {
         font-size: 35px;
+    }
+
+    /* about section styling */
+    .about-content__right .info {
+        padding: 10px 50px 20px;
     }
 }
 
@@ -109,6 +105,11 @@
 @media (max-width: 600px) {
     .grid {
         width: 90%;
+    }
+
+    /* css general */
+    section {
+        padding: 50px 0;
     }
 
     /*  homepage section styling */
@@ -125,12 +126,29 @@
     }
 
     /* about section styling */
-    .about-content__right .info+div {
-        max-width: 156px;
-        margin: 0 auto;
+    .about-content__right .info {
+        padding: unset;
     }
 
     .about-content__right a {
         padding: 15px 25px;
+        margin-top: 20px;
+    }
+
+    /* skills section styling */
+    .skills-items img {
+        width: 90%;
+    }
+
+    /* contact section styling */
+    .contact-describe h3,
+    .contact-describe>p,
+    .contact-form {
+        text-align: center;
+    }
+
+    /* footer section styling */
+    .footer {
+        font-size: 14px;
     }
 }

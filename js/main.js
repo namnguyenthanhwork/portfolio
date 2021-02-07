@@ -39,6 +39,12 @@ $(document).ready(function () {
         $(".menu-btn i").toggleClass("active");
     });
 
+    //toggle button contact
+    $(".contact-btn").click(function () {
+        $(".contact-btn i").toggleClass("contact-active");
+        $("button-contact").toggleClass("contact-active");
+    });
+
     // typing text animation script
     var typed = new Typed(".typing", {
         strings: ["Developer", "Designer", "Freelancer"],
@@ -46,7 +52,7 @@ $(document).ready(function () {
         backSpeed: 60,
         loop: true,
     });
-    
+
     var typed = new Typed(".typing-name", {
         strings: ["Nguyen Thanh Nam"],
         typeSpeed: 80,
@@ -108,7 +114,7 @@ function renderTime() {
         }
     }
 
-    // time
+    // format time
     var currentTime = new Date();
     var h = currentTime.getHours();
     var m = currentTime.getMinutes();
