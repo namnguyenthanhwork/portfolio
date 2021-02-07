@@ -10,7 +10,7 @@
     .menu-btn {
         display: block;
         z-index: 99999;
-        color: var(--white-color);
+        color: var(--secondary-color);
     }
 
     .menu-btn i.active:before {
@@ -22,10 +22,10 @@
         position: fixed;
         z-index: 2;
         height: 100vh;
-        width: 40%;
+        width: 100%;
         right: -100%;
         top: 0;
-        background: #b9b9b9;
+        background: rgba(0, 0, 0, 0.9);
         text-align: center;
         padding-top: 80px;
         transition: all 0.4s ease;
@@ -47,15 +47,59 @@
     .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 500;
         font-family: "Ubuntu", serif;
         padding: unset;
-        color: var(--black-color);
+        color: var(--white-color);
     }
 
     .header.sticky .nav-right .menu a {
-        color: var(--black-color);
+        color: var(--white-color);
+        font-size: 20px;
+    }
+
+    /* about section styling */
+    .about-content__left {
+        margin: 0 auto;
+    }
+
+    .about-content__right .name {
+        text-align: center;
+        padding-left: unset;
+    }
+
+    .about-content__right .info {
+        padding: unset;
+    }
+
+    .about-content__right .info+div {
+        max-width: 186px;
+        margin: 0 auto;
+    }
+
+    .about-content__right a {
+        margin-left: unset;
+        margin-top: 20px;
+    }
+}
+
+/*------------------------------------
+    Tablet
+    ----------------------------------*/
+@media (min-width: 600px) and (max-width:1023px) {
+
+    /*  homepage section styling */
+    .homepage .homepage-content .text-1 {
+        font-size: 24px;
+    }
+
+    .homepage .homepage-content .text-2 {
+        font-size: 60px;
+    }
+
+    .homepage .homepage-content .text-3 {
+        font-size: 35px;
     }
 }
 
@@ -67,18 +111,26 @@
         width: 90%;
     }
 
-    /* display button nav */
-    .navbar .menu {
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        padding-top: 100px;
+    /*  homepage section styling */
+    .homepage .homepage-content .text-1 {
+        font-size: 16px;
     }
 
-    .navbar .menu li a {
-        color: var(--white-color);
+    .homepage .homepage-content .text-2 {
+        font-size: 30px;
     }
 
-    .header.sticky .nav-right .menu a {
-        color: var(--white-color);
+    .homepage .homepage-content .text-3 {
+        font-size: 25px;
+    }
+
+    /* about section styling */
+    .about-content__right .info+div {
+        max-width: 156px;
+        margin: 0 auto;
+    }
+
+    .about-content__right a {
+        padding: 15px 25px;
     }
 }

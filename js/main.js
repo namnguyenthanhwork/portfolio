@@ -29,6 +29,8 @@ $(document).ready(function () {
         $("html").css("scrollBehavior", "smooth");
         $(".navbar .menu li a").removeClass("nav-active");
         $(this).addClass("nav-active");
+        $(".navbar .menu").toggleClass("active");
+        $(".menu-btn i").toggleClass("active");
     });
 
     // toggle menu/navbar script
@@ -44,14 +46,7 @@ $(document).ready(function () {
         backSpeed: 60,
         loop: true,
     });
-
-    var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true,
-    });
-
+    
     var typed = new Typed(".typing-name", {
         strings: ["Nguyen Thanh Nam"],
         typeSpeed: 80,

@@ -447,6 +447,11 @@
   }
 }
 
+@media screen and (max-width: 599px) {
+  .wide{
+    width: 500px;
+  }
+}
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
   .wide {
