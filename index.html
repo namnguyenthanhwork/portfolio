@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thành Nam Portfolio</title>
 
@@ -17,6 +18,7 @@
 
     <!-- Main CSS -->
     <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/cursor.css" />
     <link rel="stylesheet" href="css/hover-min.css" />
     <link rel="stylesheet" href="css/custom.css" />
@@ -26,6 +28,11 @@
 </head>
 
 <body onload="renderTime()">
+    <!-- loader page -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
     <!-- Go back home page -->
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
@@ -77,14 +84,14 @@
     </section>
 
     <!-- about section start -->
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-up">
         <div class="grid wide">
             <h2 class="title">About me</h2>
             <div class="about-content row">
-                <div class="about-content__left col s-12 m-6 l-4">
+                <div class="about-content__left col s-12 m-6 l-4" data-aos="fade-right">
                     <div class="avatar-flash"><img src="images/avatar.jpg" alt="images me" /></div>
                 </div>
-                <div class="about-content__right col s-12 m-12 l-8">
+                <div class="about-content__right col s-12 m-12 l-8" data-aos="fade-left">
                     <div class="name">
                         <p>Introduction about myself</p>
                     </div>
@@ -150,7 +157,7 @@
     </section>
 
     <!-- secvice section start -->
-    <section class="services" id="services">
+    <section class="services" id="services" data-aos="fade-up">
         <div class="grid wide">
             <h2 class="title">My services</h2>
             <div class="carousel owl-carousel">
@@ -204,7 +211,7 @@
     </section>
 
     <!-- skills section start -->
-    <section class="skills" id="skills">
+    <section class="skills" id="skills" data-aos="fade-up">
         <div class="grid wide">
             <h2 class="title">My skills & experiences</h2>
             <div class="row">
@@ -261,7 +268,7 @@
     </section>
 
     <!-- projects section start -->
-    <section class="projects" id="projects">
+    <section class="projects" id="projects" data-aos="fade-up">
         <div class="grid wide">
             <h2 class="title">My projects</h2>
             <div class="carousel owl-carousel">
@@ -305,7 +312,7 @@
     </section>
 
     <!-- contact section start -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-up">
         <div class="grid wide">
             <h2 class="title">Take a coffe & chat with me</h2>
             <div class="row">
@@ -354,11 +361,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
     <script src="js/cursor.js"></script>
-
+    <script>
+        // loader page
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
