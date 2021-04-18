@@ -312,7 +312,7 @@ section .title::after {
 }
 
 .navbar {
-    padding: 10px 0 !important;
+    padding: 10px 20px !important;
     transition: padding .5s ease;
     -webkit-transition: padding .5s ease;
     -moz-transition: padding .5s ease;
@@ -404,14 +404,14 @@ nav .row {
     height: 100vh;
     color: #fff;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     position: relative
 }
 
 .homepage::before {
     content: "";
     background: var(--black-color);
-    opacity: .2;
+    opacity: .15;
     position: absolute;
     left: 0;
     top: 0;
