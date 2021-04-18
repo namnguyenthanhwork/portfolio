@@ -400,7 +400,7 @@ nav .row {
 }
 
 .homepage {
-    background: url(../images/banner.jpg) no-repeat center;
+    background: url(../images/homepage.jpg) no-repeat center;
     height: 100vh;
     color: #fff;
     background-size: cover;
@@ -411,7 +411,7 @@ nav .row {
 .homepage::before {
     content: "";
     background: var(--black-color);
-    opacity: .7;
+    opacity: .2;
     position: absolute;
     left: 0;
     top: 0;
@@ -421,7 +421,7 @@ nav .row {
 
 .homepage .homepage-content {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
