@@ -22,7 +22,7 @@
         width: 100%;
         right: -100%;
         top: 0;
-        background: rgba(0, 0, 0, .9);
+        background: rgba(0, 0, 0, 1);
         text-align: center;
         padding-top: 80px;
         transition: all .4s ease;
@@ -60,7 +60,7 @@
         margin: 0 auto
     }
 
-    .about-content__right a {
+    .about-content__right a.download {
         margin-left: unset;
         margin: 0 auto
     }
@@ -112,7 +112,7 @@
     }
 
     .header.sticky .navbar {
-        padding: 3px 0 !important
+        padding: 3px 15px !important
     }
 
     .navbar .nav-left a {
@@ -151,7 +151,7 @@
         padding: unset
     }
 
-    .about-content__right a {
+    .about-content__right a.download {
         padding: 15px 25px;
         margin-top: 20px;
         width: 180px
