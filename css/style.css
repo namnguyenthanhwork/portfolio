@@ -457,7 +457,7 @@ nav .row {
 }
 
 .about-content__right a.girl-friend {
-    color: var(--text-color);
+    color: var(--primary-color);
     font-weight: bold;
     transition: all ease 0.2s;
     -webkit-transition: all ease 0.2s;
