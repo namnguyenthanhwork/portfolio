@@ -445,7 +445,7 @@ nav .row {
 
 .about-content__right .info div>p:first-child {
     color: var(--secondary-color);
-    min-width: 110px
+    min-width: 125px
 }
 
 .about-content__right .info p span {
