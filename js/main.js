@@ -19,12 +19,8 @@ function renderTime() {
     d.innerText = a, u.innerText = l, m.innerText = s, y.innerText = r, g.innerText = c, p.innerText = i, d.style.color = "#ed4747", u.style.color = "#ed4747", m.style.color = "#ed4747", y.style.color = "#0099ff", g.style.color = "#0099ff", p.style.color = "#0099ff", setTimeout("renderTime()", 1e3)
 }
 $(document).ready(function () {
-    // loader page
-    $(window).on("load", function () {
-            $(".loader-wrapper").fadeOut("slow")
-        }),
-        // scroll back
-        $(window).scroll(function () {
+    // scroll back
+    $(window).scroll(function () {
             this.scrollY > 20 ? $(".header").addClass("sticky") : $(".header").removeClass("sticky"), this.scrollY > 20 ? $(".scroll-up-btn").addClass("show") : $(".scroll-up-btn").removeClass("show")
         }), $(".scroll-up-btn").click(function () {
             $("html").animate({
