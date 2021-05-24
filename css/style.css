@@ -261,6 +261,9 @@ nav .row {
 }
 
 .navbar .nav-left a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
     width: 80px;
     height: 64px;
     display: flex;
@@ -281,6 +284,10 @@ nav .row {
 
 .navbar .nav-left a .logo-left {
     color: var(--primary-color)
+}
+
+.navbar .nav-left a .logo-right {
+    color: var(--secondary-color)
 }
 
 .header.sticky .navbar {
