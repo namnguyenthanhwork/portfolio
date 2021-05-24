@@ -23,12 +23,16 @@ $(document).ready(function () {
     $(window).scroll(function () {
             this.scrollY > 20 ? $(".header").addClass("sticky") : $(".header").removeClass("sticky"),
                 this.scrollY > 20 ? $(".scroll-up-btn").addClass("show") : $(".scroll-up-btn").removeClass("show"),
-                this.scrollY > 20 ? $(".homepage").addClass("scroll") : $(".homepage").removeClass("scroll")
-        }), $(".scroll-up-btn").click(function () {
+                (this.scrollY > 20 && $(window).width() >= 768) ? $(".homepage").addClass("scroll") : $(".homepage").removeClass("scroll")
+        }),
+
+        $(".scroll-up-btn").click(function () {
             $("html").animate({
                 scrollTop: 0
             }), $("html").css("scrollBehavior", "auto")
-        }), $(".navbar .menu li a").click(function () {
+        }),
+
+        $(".navbar .menu li a").click(function () {
             $("html").css("scrollBehavior", "smooth"), $(".navbar .menu li a").removeClass("nav-active"), $(this).addClass("nav-active"), $(".navbar .menu").toggleClass("active"), $(".menu-btn i").toggleClass("active")
         }),
 

@@ -333,6 +333,7 @@ nav .row {
     height: 100vh;
     color: #fff;
     background-size: cover;
+    background-attachment: fixed;
     transition: transform 0.3s ease-in-out;
     -webkit-transition: transform 0.3s ease-in-out;
     -moz-transition: transform 0.3s ease-in-out;
