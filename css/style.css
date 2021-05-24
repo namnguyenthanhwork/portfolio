@@ -347,6 +347,9 @@ nav .row {
     color: var(--secondary-color)
 }
 
+/* -------------------------
+    homepage section styling
+    ------------------------*/
 .scroll.homepage {
     transform: scale(0.98);
     -webkit-transform: scale(0.98);
@@ -409,6 +412,9 @@ nav .row {
     font-weight: 700
 }
 
+/* ---------------------
+   about section styling
+    -------------------- */
 .about .title::after {
     content: "who am i"
 }
@@ -531,6 +537,9 @@ nav .row {
     background: var(--white-color)
 }
 
+/* ------------------------
+   services section styling
+    -----------------------*/
 .services {
     background: var(--services-section-color);
     color: var(--white-color)
@@ -619,6 +628,9 @@ nav .row {
     text-align: center
 }
 
+/* ----------------------
+   skills section styling
+    --------------------- */
 .skills .title::after {
     content: "what i know";
     color: var(--secondary-color);
@@ -693,6 +705,9 @@ nav .row {
     -o-transform: scale(1.1)
 }
 
+/* ------------------------
+   projects section styling
+    ----------------------- */
 .projects {
     background: var(--background-color);
     color: var(--primary-color)
@@ -827,6 +842,9 @@ nav .row {
     background: var(--primary-color);
 }
 
+/* -----------------------
+   contact section styling
+    ---------------------- */
 .contact {
     position: relative;
 }
@@ -939,6 +957,9 @@ nav .row {
     -o-border-radius: 10px
 }
 
+/* ---------------------
+   footer styling
+    -------------------- */
 .footer {
     background: var(--black-color);
     color: var(--white-color);

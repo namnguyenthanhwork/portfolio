@@ -21,12 +21,13 @@ function renderTime() {
 $(document).ready(function () {
     // scroll back
     $(window).scroll(function () {
+            // active header
             this.scrollY > 30 ? $(".header").addClass("sticky") : $(".header").removeClass("sticky");
-
+            // active scroll
             this.scrollY > 30 ? $(".scroll-up-btn").addClass("show") : $(".scroll-up-btn").removeClass("show");
-
+            // active homepage
             (this.scrollY > 30 && $(window).width() >= 768) ? $(".homepage").addClass("scroll"): $(".homepage").removeClass("scroll");
-
+            // active & un active logo nav left
             if (this.scrollY > 30) {
                 $(".nav-left img:first-child").addClass("un-active"),
                     $(".nav-left img:first-child").removeClass("active"),
