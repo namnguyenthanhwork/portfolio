@@ -320,13 +320,24 @@ nav .row {
     color: var(--secondary-color)
 }
 
+.scroll.homepage {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+}
+
 .homepage {
-    background: url(../images/homepage.jpg) no-repeat center;
+    background: url(../images/homepage.jpg) center center no-repeat;
     height: 100vh;
     color: #fff;
     background-size: cover;
-    /* background-attachment: fixed; */
-    position: relative
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
 }
 
 .homepage::before {

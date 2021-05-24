@@ -21,7 +21,9 @@ function renderTime() {
 $(document).ready(function () {
     // scroll back
     $(window).scroll(function () {
-            this.scrollY > 20 ? $(".header").addClass("sticky") : $(".header").removeClass("sticky"), this.scrollY > 20 ? $(".scroll-up-btn").addClass("show") : $(".scroll-up-btn").removeClass("show")
+            this.scrollY > 20 ? $(".header").addClass("sticky") : $(".header").removeClass("sticky"),
+                this.scrollY > 20 ? $(".scroll-up-btn").addClass("show") : $(".scroll-up-btn").removeClass("show"),
+                this.scrollY > 20 ? $(".homepage").addClass("scroll") : $(".homepage").removeClass("scroll")
         }), $(".scroll-up-btn").click(function () {
             $("html").animate({
                 scrollTop: 0
