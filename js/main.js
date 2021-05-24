@@ -21,9 +21,23 @@ function renderTime() {
 $(document).ready(function () {
     // scroll back
     $(window).scroll(function () {
-            this.scrollY > 20 ? $(".header").addClass("sticky") : $(".header").removeClass("sticky"),
-                this.scrollY > 20 ? $(".scroll-up-btn").addClass("show") : $(".scroll-up-btn").removeClass("show"),
-                (this.scrollY > 20 && $(window).width() >= 768) ? $(".homepage").addClass("scroll") : $(".homepage").removeClass("scroll")
+            this.scrollY > 30 ? $(".header").addClass("sticky") : $(".header").removeClass("sticky");
+
+            this.scrollY > 30 ? $(".scroll-up-btn").addClass("show") : $(".scroll-up-btn").removeClass("show");
+
+            (this.scrollY > 30 && $(window).width() >= 768) ? $(".homepage").addClass("scroll"): $(".homepage").removeClass("scroll");
+
+            if (this.scrollY > 30) {
+                $(".nav-left img:first-child").addClass("un-active"),
+                    $(".nav-left img:first-child").removeClass("active"),
+                    $(".nav-left img:last-child").addClass("active"),
+                    $(".nav-left img:last-child").removeClass("un-active");
+            } else {
+                $(".nav-left img:first-child").addClass("active"),
+                    $(".nav-left img:first-child").removeClass("un-active"),
+                    $(".nav-left img:last-child").addClass("un-active"),
+                    $(".nav-left img:last-child").removeClass("active");
+            }
         }),
 
         $(".scroll-up-btn").click(function () {

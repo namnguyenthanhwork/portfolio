@@ -1,5 +1,8 @@
 @import url(../css/base.css);
 
+/* ----------------
+    general styling
+    --------------- */
 section {
     padding: 70px 0 50px
 }
@@ -45,6 +48,9 @@ section .title::after {
     -o-transform: translateX(-50%)
 }
 
+/* ----------------
+    scroll styling
+    --------------- */
 .scroll-up-btn {
     position: fixed;
     right: 30px;
@@ -80,6 +86,9 @@ section .title::after {
     box-shadow: 0 0 20px var(--shadow-color)
 }
 
+/* -----------------------
+    button contact styling
+    ----------------------*/
 .button-contact {
     position: fixed;
     z-index: 2;
@@ -214,6 +223,9 @@ section .title::after {
     border-bottom-right-radius: 1px
 }
 
+/* ----------------
+    header styling
+    --------------- */
 .header {
     position: fixed;
     z-index: 999;
@@ -232,6 +244,9 @@ section .title::after {
     box-shadow: 0 0 30px var(--shadow-color)
 }
 
+/* ----------------
+    navbar styling
+    --------------- */
 .navbar {
     padding: 10px 20px !important;
     transition: padding .5s ease;
@@ -246,19 +261,22 @@ nav .row {
 }
 
 .navbar .nav-left a {
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: var(--secondary-color);
-    font-size: 35px;
-    font-weight: 600;
     width: 80px;
     height: 64px;
     display: flex;
 }
 
 .nav-left img {
-    display: block;
     width: 100%;
     height: auto;
+}
+
+.nav-left img.un-active {
+    display: none;
+}
+
+.nav-left img.active {
+    display: block;
 }
 
 .navbar .nav-left a .logo-left {
@@ -357,8 +375,8 @@ nav .row {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%
+    width: 100vw;
+    height: 100vh
 }
 
 .homepage .homepage-content {
