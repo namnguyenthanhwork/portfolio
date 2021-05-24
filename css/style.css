@@ -249,7 +249,16 @@ nav .row {
     font-family: 'Montserrat Alternates', sans-serif;
     color: var(--secondary-color);
     font-size: 35px;
-    font-weight: 600
+    font-weight: 600;
+    width: 80px;
+    height: 64px;
+    display: flex;
+}
+
+.nav-left img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .navbar .nav-left a .logo-left {
