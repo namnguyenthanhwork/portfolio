@@ -21,7 +21,7 @@ var snowStorm = function (g, f) {
     this.snowColor = "#ed4747"; // Don't eat (or use?) yellow snow.
     // • = bullet, · is square on some systems etc. (i use cherry blossom)
     // this.snowCharacter = "&bull;";
-    this.snowCharacter = '<img src="../images/season/maple-leaf.png" style="width:100%; height:auto;"/>';
+    this.snowCharacter = '<img src="../images/season/maple-leaf.png" style="width:100%; height:auto;">';
     this.snowStick = !0; // Whether or not snow should "stick" at the bottom. When off, will never collect.
     this.targetElement = null; // element which snow will be appended to (null = document.body) - can be an element ID eg. 'myDiv', or a DOM node reference
     this.useMeltEffect = !0; // When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
