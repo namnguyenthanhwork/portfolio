@@ -21,7 +21,7 @@ var snowStorm = function (g, f) {
     this.snowColor = "#ed4747"; // Don't eat (or use?) yellow snow.
     // • = bullet, · is square on some systems etc. (i use cherry blossom)
     // this.snowCharacter = "&bull;";
-    this.snowCharacter = '<img src="https://www.asuzac-acm.com.vn/themes/acm-2020/images/hoaanhdao/hoadao.png" />';
+    this.snowCharacter = '<img src="../images/season/hoa-phuong-do.png" style="width: 100%;height: auto;"/>';
     this.snowStick = !0; // Whether or not snow should "stick" at the bottom. When off, will never collect.
     this.targetElement = null; // element which snow will be appended to (null = document.body) - can be an element ID eg. 'myDiv', or a DOM node reference
     this.useMeltEffect = !0; // When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
@@ -30,8 +30,8 @@ var snowStorm = function (g, f) {
     // --- less-used bits ---
     this.freezeOnBlur = !0; // Only snow when the window is in focus (foreground.) Saves CPU.
     this.flakeRightOffset = this.flakeLeftOffset = 0; // Left margin/gutter space on edge of container (eg. browser window.) Bump up these values if seeing horizontal scrollbars. Right margin/gutter space on edge of container
-    this.flakeHeight = this.flakeWidth = 15; // Max pixel width & height reserved for snow element
-    this.vMaxX = 3; // Maximum X velocity range for snow
+    this.flakeHeight = this.flakeWidth = 20; // Max pixel width & height reserved for snow element
+    this.vMaxX = 2; // Maximum X velocity range for snow
     this.vMaxY = 3; // Maximum Y velocity range for snow
     this.zIndex = 99999; // CSS stacking order applied to each snowflake
 
