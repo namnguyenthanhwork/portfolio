@@ -9,10 +9,11 @@ section {
 
 section .title {
     position: relative;
+    margin-bottom: 60px;
+
     text-align: center;
     font-size: 35px;
     font-weight: 600;
-    margin-bottom: 60px;
     font-family: Poppins, serif;
     color: var(--black-color)
 }
@@ -22,9 +23,12 @@ section .title::before {
     position: absolute;
     bottom: -15px;
     left: 50%;
+
     width: 180px;
     height: 3px;
+
     background: #111;
+
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -37,10 +41,13 @@ section .title::after {
     position: absolute;
     bottom: -27px;
     left: 50%;
+
     font-size: 20px;
-    color: var(--secondary-color);
     padding: 0 5px;
+
+    color: var(--secondary-color);
     background: var(--white-color);
+
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -56,20 +63,25 @@ section .title::after {
     right: 30px;
     bottom: 75px;
     z-index: 99;
+
     width: 45px;
     height: 45px;
     line-height: 45px;
+
     cursor: pointer;
     opacity: 0;
     background: var(--linear-color);
     color: var(--white-color);
+
     text-align: center;
     font-size: 30px;
+
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -94,10 +106,12 @@ section .title::after {
     z-index: 2;
     bottom: 5%;
     left: 7%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -110,8 +124,10 @@ section .title::after {
     z-index: 2;
     bottom: 11.5%;
     left: 5%;
+
     font-size: 50px;
     color: var(--secondary-color);
+
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -147,17 +163,21 @@ section .title::after {
 .button-contact a i {
     color: var(--white-color);
     background: var(--white-color);
+
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     font-size: 20px;
+
     margin-bottom: 10px;
+
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -179,10 +199,12 @@ section .title::after {
 
 .button-contact a:last-child i {
     position: relative;
+
     border-top: 10px solid #ea4335;
     border-right: 10px solid #4285f4;
     border-bottom: 10px solid #34a853;
     border-left: 10px solid #fbbc05;
+
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -195,11 +217,13 @@ section .title::after {
     position: absolute;
     top: 1px;
     right: -10px;
+
     border-top: 9px solid transparent;
     border-right: 11px solid #fff;
     border-bottom-right-radius: 36%;
     border-bottom: 3px solid transparent;
     border-left: 11px solid transparent;
+
     transform: rotate(-37deg);
     -webkit-transform: rotate(-37deg);
     -moz-transform: rotate(-37deg);
@@ -212,9 +236,11 @@ section .title::after {
     position: absolute;
     top: 45%;
     right: -10px;
+
     width: 18px;
     height: 7px;
     background: #4285f4;
+
     transform: translate(-1px, -2px);
     -webkit-transform: translate(-1px, -2px);
     -moz-transform: translate(-1px, -2px);
@@ -232,6 +258,7 @@ section .title::after {
     top: 0;
     right: 0;
     left: 0;
+
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -264,6 +291,7 @@ nav .row {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 35px;
     font-weight: bold;
+
     width: 80px;
     height: 64px;
     display: flex;
@@ -323,6 +351,7 @@ nav .row {
     color: var(--white-color);
     padding: 15px 10px;
     font-size: 20px;
+
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -368,9 +397,11 @@ nav .row {
 .homepage {
     background: url(../images/homepage.jpg) center center no-repeat;
     height: 100vh;
+
     color: #fff;
     background-size: cover;
     background-attachment: fixed;
+
     transition: transform 0.3s ease-in-out;
     -webkit-transition: transform 0.3s ease-in-out;
     -moz-transition: transform 0.3s ease-in-out;
@@ -382,9 +413,11 @@ nav .row {
     content: "";
     background: var(--black-color);
     opacity: .15;
+
     position: absolute;
     left: 0;
     top: 0;
+
     width: 100vw;
     height: 100vh
 }
@@ -393,6 +426,7 @@ nav .row {
     position: absolute;
     top: 30%;
     left: 50%;
+
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -430,6 +464,7 @@ nav .row {
     position: relative;
     z-index: 1;
     overflow: hidden;
+
     width: 100%;
     height: 100%;
     border-radius: 30px
@@ -438,38 +473,45 @@ nav .row {
 .about-content__left .avatar-flash::before {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 150%;
-    background-color: rgba(255, 255, 255, .1);
     top: -100%;
     left: 50%;
-    transform: translateX(-100%) rotate(45deg);
+
+    width: 15px;
+    height: 150%;
+
+    background-color: rgba(255, 255, 255, .1);
+
     animation: flash 1.5s infinite;
+    -webkit-animation: flash 1.5s infinite;
+
+    transform: translateX(-100%) rotate(45deg);
     -webkit-transform: translateX(-100%) rotate(45deg);
     -moz-transform: translateX(-100%) rotate(45deg);
     -ms-transform: translateX(-100%) rotate(45deg);
     -o-transform: translateX(-100%) rotate(45deg);
-    -webkit-animation: flash 1.5s infinite
 }
 
 @keyframes flash {
     to {
-        transform: translateX(100%) rotate(45deg);
         left: 100%;
         top: 50%;
+
+        transform: translateX(100%) rotate(45deg);
         -webkit-transform: translateX(100%) rotate(45deg);
         -moz-transform: translateX(100%) rotate(45deg);
         -ms-transform: translateX(100%) rotate(45deg);
-        -o-transform: translateX(100%) rotate(45deg)
+        -o-transform: translateX(100%) rotate(45deg);
     }
 }
 
 .about-content__left img {
     width: 100%;
     height: 100%;
+
     padding: 5px;
     background: #e1e1e1;
     object-fit: cover;
+
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -511,6 +553,7 @@ nav .row {
 .about-content__right a.girl-friend {
     color: var(--primary-color);
     font-weight: bold;
+
     transition: all ease 0.2s;
     -webkit-transition: all ease 0.2s;
     -moz-transition: all ease 0.2s;
@@ -524,14 +567,17 @@ nav .row {
     width: 200px;
     margin-left: 50px;
     padding: 20px 40px;
+
     border: 3px solid var(--secondary-color);
     color: var(--white-color);
     background: var(--secondary-color);
+
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
@@ -581,14 +627,18 @@ nav .row {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
     padding: 10px;
     height: 220px;
+
     background: var(--services-card-color);
+
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -672,11 +722,13 @@ nav .row {
 
 .title-skills>i {
     color: var(--primary-color);
+
     font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+
     width: 50px;
     height: 50px;
-    line-height: 50px;
-    text-align: center
 }
 
 .skill-list .title-skills:nth-child(2) {
@@ -696,8 +748,9 @@ nav .row {
     padding: 10px 0 0;
     width: 100%;
     height: auto;
-    transition: all .3s ease;
     cursor: pointer;
+
+    transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -743,15 +796,19 @@ nav .row {
 .project__items {
     position: relative;
     top: 0;
-    border-radius: 10px;
+
     background: var(--white-color);
+
+    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+
     padding: 10px 0;
     height: 280px;
     margin-bottom: 20px;
+
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -772,15 +829,19 @@ nav .row {
     position: absolute;
     z-index: 2;
     top: -2px;
+
     right: 10px;
     width: 32px;
     height: 40px;
     text-align: center;
+
     color: var(--white-color);
     background: var(--secondary-color);
+
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
     cursor: pointer;
     opacity: 0;
+
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -800,6 +861,7 @@ nav .row {
     font-weight: 900;
     padding-top: 7px;
     font-size: 17px;
+
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -811,6 +873,7 @@ nav .row {
 .project__items img {
     width: 100%;
     height: 150px;
+    object-fit: cover;
     padding: 0 30px;
 }
 
@@ -828,15 +891,18 @@ nav .row {
 .btn-view {
     display: block;
     width: 100px;
+
     margin: 10px auto 0;
     text-align: center;
     line-height: 30px;
     border: 2px solid var(--primary-color);
+
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -846,6 +912,51 @@ nav .row {
 
 .btn-view:hover {
     color: var(--white-color);
+    background: var(--primary-color);
+}
+
+/* pagination styling */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.pagination a {
+    font-weight: bold;
+    display: block;
+
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    margin: 0 10px 10px 0;
+
+    color: var(--white-color);
+    background: var(--secondary-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.pagination a.active-pagination {
+    background: var(--primary-color);
+}
+
+.pagination a:hover {
     background: var(--primary-color);
 }
 
@@ -861,8 +972,10 @@ nav .row {
     position: absolute;
     left: 0;
     bottom: 100%;
+
     background: url(../images/banner-page-before.png) 50% no-repeat;
     background-size: 100% 100%;
+
     width: 100%;
     height: 60px;
 }
@@ -927,11 +1040,13 @@ nav .row {
     padding: 0 20px;
     outline: 0;
     border: 2px solid #b3b3b3;
+
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
+
     border-radius: 7px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
@@ -954,9 +1069,11 @@ nav .row {
     outline: 0;
     margin: 0 auto;
     text-align: center;
+
     border: 2px solid var(--primary-color);
     background: var(--primary-color);
     color: var(--white-color);
+
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
