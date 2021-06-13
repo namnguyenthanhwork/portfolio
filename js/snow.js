@@ -22,10 +22,7 @@ var snowStorm = (function (g, f) {
     this.flakeHeight = this.flakeWidth = 20; // Max pixel width & height reserved for snow element
     // • = bullet, · is square on some systems etc. (i use cherry blossom)
     var currTime = new Date;
-    if (currTime.getMonth() >= 3 && currTime.getMonth() < 6)
-        this.snowCharacter =
-        '<img src="https://png2.cleanpng.com/sh/73d6b8875af23ff0e07c7754d56797c6/L0KzQYm3VcMyN5ZwfZH0aYP2gLBuTfRzaahuhtk2b3PrfrK0if51bZhqiuRybXGwgLb7gfwubJZ4gAZ4cD36cb3zkPFxbaMygNHqLX3keX68gsExP5c4TdVqNEi4RXA4UcU1OmY6TKMAMke7QIiAWcc5Omk7RuJ3Zx==/kisspng-drawing-ochna-integerrima-petal-desktop-wallpaper-hoa-mai-5b107f35ca4855.1154255415278077978286.png" style="width:100%; height:auto;">';
-    else if (currTime.getMonth() >= 6 && currTime.getMonth() < 8)
+    if (currTime.getMonth() >= 0 && currTime.getMonth() < 8)
         this.snowCharacter =
         '<img src="https://i.pinimg.com/originals/42/1b/a2/421ba2c5f0dacf23777c9cd2e92da906.png" style="width:100%; height:auto;">';
     else if (currTime.getMonth() >= 9 && currTime.getMonth() < 11)
