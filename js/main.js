@@ -121,9 +121,8 @@ function alertClickFail() {
     swal("Opps", "Sorry! Link isn't ready, please try the next time. Thank you!!!", "error")
 }
 
-// init animation
-AOS.init({
-    offset: 150,
-    delay: 0,
-    duration: 1e3
-});
+// Initiate the wowjs animation library
+wow = new WOW({
+    offset: 110
+})
+wow.init();
