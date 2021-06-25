@@ -916,48 +916,34 @@ nav .row {
 }
 
 /* pagination styling */
-.pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 30px 0;
-}
-
 .pagination a {
-    font-weight: bold;
     display: block;
-
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
     text-align: center;
 
-    margin: 0 10px 10px 0;
+    width: 140px;
+    padding: 10px 0;
+    margin: 0 auto;
 
     color: var(--white-color);
-    background: var(--secondary-color);
+    background: var(--primary-color);
     box-shadow: 0 0 10px var(--shadow-color);
 
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-}
-
-.pagination a.active-pagination {
-    background: var(--primary-color);
+    -webkit-transition: all 0.3s ease;
 }
 
 .pagination a:hover {
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 /* -----------------------
